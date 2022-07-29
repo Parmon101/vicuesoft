@@ -1,0 +1,31 @@
+.header {
+    border-bottom: 1px solid gray;
+    padding: 40px 0;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    display: flex;
+    margin: 0 15px;
+}
+
+.headerLogo > img {
+    margin-right: 15px;
+}
+
+.headerLogo > div > h1 {
+    color: #181818;
+    font-size: 24px;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.headerLogo > div > p {
+    color: #7b7b7b;
+}

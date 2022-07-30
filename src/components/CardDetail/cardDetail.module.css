@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    margin: 25px;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 690px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.card {
+    background: grey;
+    border-radius: 15px;
+    padding: 4px 14px;
+}
+
+.text {
+    text-align: center;
+    margin: 15px;
+    font-size: 1rem;
+    color: black;
+}
+
+.text > span {
+    color: rgb(255, 255, 255);
+}
+
+.wrapp {
+    padding: 16px 0 0 0;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    background: red;
+}
+
+.itemImg {
+    margin: 15px 0;
+    height: 75vh;
+}

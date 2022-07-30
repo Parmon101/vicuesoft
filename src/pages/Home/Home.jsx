@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React from 'react';
 import { Card } from '../../components/Card';
-import { Header } from '../../components/Header/Header';
 import { Pagination } from '../../components/Pagination';
 import { Search } from '../../components/Search/Search';
 import styles from './home.module.css';
@@ -50,7 +49,6 @@ export const Home = () => {
 
     return (
         <div>
-            <Header />
             <Search onChange={handleSearch} />
             <h2 className={styles.content__title}>Все виды</h2>
             <div>

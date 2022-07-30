@@ -8,8 +8,6 @@ export const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) 
         pageNumbers.push(i);
     }
 
-    console.log(pageNumbers);
-    console.log(currentPage);
     return (
         <div className={styles.container}>
             <div className={styles.pagination}>
@@ -18,9 +16,7 @@ export const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) 
                         key={index}
                         onClick={() => paginate(number)}
                         // href="!#"
-                        className={index + 1 === currentPage ? `${styles.active}` : ''}
-                        // className={styles.page_link}>
-                    >
+                        className={index + 1 === currentPage ? `${styles.active}` : ''}>
                         {number}
                     </a>
                 ))}

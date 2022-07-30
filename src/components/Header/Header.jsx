@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './header.module.css';
-import { Search } from '../Search/Search';
 import logo from '../../assets/beerLogo.svg';
 
 export const Header = () => {
@@ -14,7 +13,6 @@ export const Header = () => {
                         <p> пей что-бы жить </p>
                     </div>
                 </div>
-                <Search />
             </div>
         </div>
     );

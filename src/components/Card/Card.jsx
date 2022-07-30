@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { CustomLink } from '../../helper/CustomLink';
 import styles from './card.module.css';
 
 export const Card = ({ posts, loading }) => {
@@ -12,8 +13,8 @@ export const Card = ({ posts, loading }) => {
     return (
         <div className={styles.container}>
             {posts.map((post) => (
-                <div key={post.id} className={styles.card}>
-                    <Link to={`/product/${post.id}`}>
+                <CustomLink to={`/product/${post.id}`}>
+                    <div key={post.id} className={styles.card}>
                         <picture className={styles.thumbnail}>
                             <img
                                 className={styles.itemImg}
@@ -26,8 +27,8 @@ export const Card = ({ posts, loading }) => {
                             <h2>{post.name}</h2>
                             <p>{truncate(post.description)}</p>
                         </div>
-                    </Link>
-                </div>
+                    </div>
+                </CustomLink>
             ))}
         </div>
     );

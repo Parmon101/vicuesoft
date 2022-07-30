@@ -15,7 +15,6 @@ export const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) 
                     <a
                         key={index}
                         onClick={() => paginate(number)}
-                        // href="!#"
                         className={index + 1 === currentPage ? `${styles.active}` : ''}>
                         {number}
                     </a>
